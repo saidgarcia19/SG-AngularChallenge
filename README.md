@@ -21,6 +21,7 @@ Using [la tecnologia que utilices] we would like you to create a simple applicat
   - How to install dependencies
   - How to run in development
 - Use mock data as returned data from server, i.e, transform data to use a stream (rxjs or something else)
+- A form to create a new member
 
 ## Nice to have
 
