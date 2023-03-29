@@ -39,6 +39,8 @@ Using your preferred technology, please implement the following features:
 - As a user, I should be able to search bloggers by name or website
 - As a user, I should be able to add a friend to a blogger (blogger has many blogger friends)
 
+The last two features don't need to work with a BE (API,algolig), it can be just a mock. For example, for the search feature you can display an autocomplete list or redirect the user to a results page with mock data.
+
 ## Nice to have
 
 Your application can include automated tests.
