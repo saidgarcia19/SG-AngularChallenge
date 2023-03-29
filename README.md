@@ -87,4 +87,4 @@ Whether you persist data or not, you may use this JSON to populate your initial 
 We want to see your application working and code:
 
 1. If you're using web technologies, please deploy your application to a free service like github pages. If you're creating a native app, please record your screen showing your application functionality.
-1. To upload your code please clone this repository and when you're ready please create a new PR from your personal branch to the main branch. Assign your PR to Rodolfo Islas or Gabriel Paredes.
+1. To upload your code please clone this repository and when you're ready please create a new PR from your personal branch to the main branch. Assign your PR to Rodolfo Islas.
