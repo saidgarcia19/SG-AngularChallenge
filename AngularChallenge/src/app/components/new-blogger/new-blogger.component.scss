@@ -1,0 +1,87 @@
+ @media (min-width: 768px) {
+    .container {
+      max-width: 800px;
+    }
+    
+    form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    mat-form-field {
+      flex: 0 0 48%;
+    }
+  
+    button {
+      flex: 0 0 100%;
+      margin-top: 10px;
+    }
+  }
+
+  /* Estilos generales */
+/* Estilos generales */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos para los campos de entrada (input) */
+  mat-form-field {
+    width: 100%;
+  }
+  
+  /* Estilos para las etiquetas (label) */
+  .mat-form-field-label {
+    color: #444; /* Color de texto */
+  }
+  
+  /* Estilos para los bordes del formulario */
+  mat-form-field {
+    border: 1px solid #ccc; /* Color del borde */
+    border-radius: 4px; /* Redondear esquinas */
+  }
+  
+  /* Estilos para los campos de entrada (input) */
+  input {
+    background-color:#f6e8e8; /* Quitar el color de fondo de los campos de entrada */
+    color: #333; /* Color de texto */
+    bottom: 10px;
+  }
+  
+  /* Estilos para el botón */
+  button {
+    margin-top: 10px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Quitar borde del botón */
+    border-radius: 4px; /* Redondear esquinas del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer;
+  }
+  
+  /* Cambiar el color de fondo del botón cuando se le pasa el mouse */
+  button:hover {
+    background-color: #0056b3; /* Nuevo color de fondo */
+  }
+
+  ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: transparent !important;
+  }
+  ::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label{
+    color: #333 !important;
+  }
+  
+  ::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input{
+    color: black!important;
+  }
+
+  ::ng-deep .mat-mdc-tab .mdc-tab__text-label{
+    color: #333 !important;
+  }

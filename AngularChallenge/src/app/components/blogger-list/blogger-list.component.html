@@ -1,0 +1,43 @@
+<div class="container">
+<h3>Lista de Bloggers</h3>
+<form [formGroup]="dataForm">
+    <input matInput placeholder="Buscar bloggers" formControlName="searchTerm" (keyup)="filtrar()" class="input">
+    <button mat-raised-button color="primary" (click)="resetSearch()">Reset search</button>
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Columnas de la tabla -->
+      <ng-container matColumnDef="name" class="mat-form-field">
+        <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+        <mat-cell *matCellDef="let blogger" class="input"> {{ blogger.name }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="website" class="mat-form-field">
+        <mat-header-cell *matHeaderCellDef> Sitio Web </mat-header-cell>
+        <mat-cell *matCellDef="let blogger" class="input"> {{ blogger.website }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="picture" class="mat-form-field">
+        <mat-header-cell *matHeaderCellDef> Imagen </mat-header-cell>
+        <mat-cell *matCellDef="let blogger"> {{blogger.picture}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="email" class="mat-form-field">
+        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+        <mat-cell *matCellDef="let blogger" class="input"> <a [href]="'mailto:' + blogger.email">{{ blogger.email }}</a> </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="friends" class="mat-form-field">
+        <mat-header-cell *matHeaderCellDef> Amigos </mat-header-cell>
+        <mat-cell *matCellDef="let blogger" class="input">
+          <ul>
+            <li *ngFor="let friendId of blogger.friends">{{ getFriendName(friendId) }}</li>
+          </ul>
+        </mat-cell>
+      </ng-container>
+
+      <!-- Definición de las columnas a mostrar -->
+      <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: columnsToDisplay;" (click)="openModal(row)"></mat-row>
+    </mat-table>
+</form>
+</div>

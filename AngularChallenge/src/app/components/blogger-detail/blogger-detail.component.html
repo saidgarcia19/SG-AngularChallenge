@@ -1,0 +1,11 @@
+<h2>Detalles del Blogger</h2>
+    <p><strong>Nombre:</strong> {{ data.name }}</p>
+    <p><strong>Sitio Web:</strong> {{ data.website }}</p>
+    <p><strong>Picture url:</strong> {{ data.picture }}</p>
+    <p><strong>Email:</strong> {{ data.email }}</p>
+    <p><strong>Amigos:</strong></p>
+    <ul>
+      <li *ngFor="let friendId of data.friends">{{ getFriendName(friendId) }}</li>
+    </ul>
+    <button mat-icon-button (click)="AddNewFriend(data)">+</button>
+    <button mat-raised-button color="primary" (click)="closeModal()">Cerrar</button>
