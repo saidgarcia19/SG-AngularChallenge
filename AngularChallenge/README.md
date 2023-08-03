@@ -1,5 +1,12 @@
 # AngularChallenge
 
+instrucciones:
+-En la primer pestaña se pueden agregar nuevos registros
+-segunda pestaña muestra la lista de los bloggers
+-segunda pestaña cuenta con un buscador el cual toma el texto ingresado para buscar que coincida con el nombre o con el sitio web
+-segunda pestaña cuenta con un boton para reestablecer el filtro de busqueda y mostrar de nuevo todos los registros
+-segunda pestaña: al dar click sobre cualquier registro, se abrirá un modal con la información del blogger
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
